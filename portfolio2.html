@@ -1,0 +1,151 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style2.css">
+  <title>Alakh Sumbariya — Front‑End Developer</title>
+  
+  <meta name="description" content="Portfolio of Alakh Sumbariya — Front-End Developer focusing on accessible, semantic UI." />
+
+  <!-- Social / SEO -->
+  <meta property="og:title" content="Alakh Sumbariya — Front‑End Developer" />
+  <meta property="og:description" content="Accessible, semantic front-end development portfolio." />
+  <meta property="og:image" content="/images/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="brand-avatar" src="http://127.0.0.1:5500/webdev/photo.jpg"
+             
+             sizes="(max-width:600px) 96px, 128px"
+             alt="Alakh Sumbariya portrait" width="128" height="128" />
+        <div>
+          <h1 class="site-title">Alakh Sumbariya Chauhan</h1>
+          <p class="site-tag">Front‑End Developer • HTML • CSS • JavaScript</p>
+        </div>
+      </div>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <section id="about" aria-labelledby="about-heading" class="card about-card">
+      <div class="about-grid">
+        <figure class="about-figure">
+          <img src="photo.jpg" alt="Portrait of Alakh Sumbariya smiling" width="240" height="240" loading="lazy" />
+          <figcaption>Alakh Sumbariya — Front‑End Developer</figcaption>
+        </figure>
+
+        <div class="about-bio">
+          <h2 id="about-heading">About</h2>
+          <p>I’m a front‑end developer who cares about clean semantics, accessibility, and performance. I build responsive, component‑driven UIs using modern HTML, CSS, and JavaScript. I enjoy translating designs into inclusive, production‑ready code.</p>
+
+          <ul class="cta-list">
+            <li><a class="btn-primary" href="#contact">Get in touch</a></li>
+            <li><a class="btn-ghost" href="#skills">See skills</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading" class="card">
+      <h2 id="skills-heading">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Core</h3>
+          <ul>
+            <li>Semantic HTML5 & Accessibility (a11y)</li>
+            <li>CSS (Flexbox, Grid, Responsive)</li>
+            <li>JavaScript (ES6+), DOM</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Browser DevTools</li>
+            <li>Figma handoff</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Highlights</h3>
+          <ul>
+            <li>Accessible component design</li>
+            <li>Performance-minded builds</li>
+            <li>Responsive UI systems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="edu-heading" class="card">
+      <h2 id="edu-heading">Education</h2>
+      <article>
+        <h3>GLA University, Mathura — B.Tech (CSE)</h3>
+        <p><time datetime="2022-08">Aug 2022</time> — <time datetime="2026-06">Jun 2026</time></p>
+        <ul>
+          <li>Relevant coursework: Web Development, Data Structures, DBMS</li>
+          <li>Activities: Front‑End club, project showcases</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading" class="card contact-card">
+      <h2 id="contact-heading">Contact</h2>
+      <address>
+        <p>Email: <a href="mailto:alakh.sumbariya@example.com">alakh.sumbariya@example.com</a></p>
+        <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+        <p>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">github.com/your-username</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-username/" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-username</a></p>
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>&copy; <time datetime="2025">2025</time> Alakh Sumbariya. All rights reserved.</small>
+      <nav aria-label="Footer">
+        <ul class="social-list">
+          <li><a href="#" aria-label="GitHub" title="GitHub">GH</a></li>
+          <li><a href="#" aria-label="LinkedIn" title="LinkedIn">IN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Simple menu toggle for small screens
+    (function () {
+      const btn = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.primary-nav ul');
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('nav-open');
+      });
+    })();
+  </script>
+</body>
+</html>
