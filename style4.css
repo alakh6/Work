@@ -1,0 +1,117 @@
+/* Global dark theme */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  margin: 0;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+/* Header */
+#main-header {
+  background: linear-gradient(90deg, #1f6feb, #238636);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+.header-img {
+  margin-top: 15px;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+}
+
+/* About section */
+.about {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 6px solid rgba(255, 99, 71, 0.9);
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+p[data-role="mission"] {
+  font-style: italic;
+  color: hsl(120, 60%, 70%);
+  margin-top: 10px;
+}
+.intro::first-letter {
+  font-size: 180%;
+  font-weight: bold;
+  color: #ff7b72;
+}
+
+/* Section titles */
+h2 {
+  margin-top: 40px;
+  color: #58a6ff;
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+  padding-bottom: 5px;
+}
+
+/* Movies list */
+.movies {
+  list-style-type: none;
+  padding: 0;
+}
+.movies li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin: 10px 0;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.movies li img {
+  width: 60px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+.movies li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(88,166,255,0.5);
+}
+.favorite {
+  color: gold;
+  font-weight: bold;
+  background: rgba(255, 215, 0, 0.15);
+  border: 2px solid gold;
+  text-align: center;
+}
+
+/* Cities list */
+.cities {
+  padding-left: 20px;
+  list-style-type: upper-roman;
+}
+.cities li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+}
+.cities li img {
+  width: 60px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+.cities li:nth-child(odd) {
+  background: rgba(88,166,255,0.1);
+}
+.cities li:nth-child(even) {
+  background: rgba(35,134,54,0.1);
+}
+.cities li:hover {
+  background: rgba(255,255,255,0.1);
+  transform: scale(1.03);
+}
